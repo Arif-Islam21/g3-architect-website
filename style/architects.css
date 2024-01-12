@@ -7,6 +7,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+.text-light-grey {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 10px auto;
+}
+
 .btn-primary {
   border-radius: 8px;
   background: #ff900e;
@@ -59,12 +66,6 @@ nav li a {
   font-weight: 700;
   margin: 20px 0;
 }
-.banner-description {
-  color: #727272;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 20px 0;
-}
 .banner img {
   width: 100%;
   margin-top: 20px;
@@ -98,13 +99,6 @@ main {
 .text-feature {
   color: #ff900e;
 }
-.teams-description {
-  color: #727272;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 10px auto;
-}
 
 /* responsive styles */
 /* mobile devices */
@@ -112,8 +106,15 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav , .teams-container{
     flex-direction: column;
+  }
+  .teams-img-container{
+    grid-template-columns: 1fr;
+  }
+  .teams-content{
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 /* tablet or medium devices */
@@ -121,7 +122,7 @@ main {
   header {
     padding: 50px;
   }
-  nav {
+  nav, .teams-container {
     flex-direction: column;
   }
 }
